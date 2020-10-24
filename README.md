@@ -1,18 +1,18 @@
 # seminario-mongodb
 
-####1 - Instalar MongoDB en ambiente local.
-*Ok
+#### 1 - Instalar MongoDB en ambiente local.
+* Ok
 
-####2 - Conectarse a MongoDB vía CLI.
-*Ok
+#### 2 - Conectarse a MongoDB vía CLI.
+* Ok
 
-####3 - Crear una nueva base de datos llamada futbolfifa.
-*use futbolfifa
-*show dbs
+#### 3 - Crear una nueva base de datos llamada futbolfifa.
+* use futbolfifa
+* show dbs
 
-####4 - Crear una nueva collection llamada players.
-*db.createCollection("players")
-*show collections
+#### 4 - Crear una nueva collection llamada players.
+* db.createCollection("players")
+* show collections
 
 ####5 - Insertar 5 documentos en la collection players con datos básicos (nombre, apellido, posición, fecha de nacimiento, etc).
 *db.players.insert({nombre: "Nom1", apellido: "Ape1", posicion: "Arquero", fechaNacimiento: "2000-01-01", altura: 185})
