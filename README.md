@@ -1,6 +1,6 @@
 # seminario-mongodb
 
-## Actividad #1
+## [Actividad #1](actividad1.md)
 
 #### 1 - Instalar MongoDB en ambiente local.
 * Ok
