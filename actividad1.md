@@ -1,4 +1,4 @@
-### [Volver al indice](readme.md)
+### [Volver al indice](README.md)
 
 ## Actividad #1
 
