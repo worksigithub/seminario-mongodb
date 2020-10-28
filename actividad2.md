@@ -10,13 +10,13 @@
   
 #### 3 - Agregar películas usando insert(), insertOne() & insertMany().
 * insert()
-  * db.movie.insert({titulo: "tit1", year: "1998", rating: 2.0, genre: "Drama", descripcion: "desc.1", actors: ["actor 1","actor 2"], country: "USA", income: 12000, duration: 190})
+  * db.movie.insert({titulo: "tit1", year: 1998, rating: 2.0, genre: "Drama", descripcion: "desc.1", actors: ["actor 1","actor 2"], country: "USA", income: 12000, duration: 190})
 * insert()
-  * db.movie.insert([{titulo: "tit2", year: "2005", rating: 2.5, genre: "Accion", descripcion: "desc.2", actors: ["actor 3","actor 4"], country: "USA", income: 25000, duration: 210},{titulo: "tit3", year: "2015", rating: 3.5, genre: "Accion", descripcion: "desc.3", actors: ["actor 3","actor 4"], country: "USA", income: 35000, duration: 200}])
+  * db.movie.insert([{titulo: "tit2", year: 2005, rating: 2.5, genre: "Accion", descripcion: "desc.2", actors: ["actor 3","actor 4"], country: "USA", income: 25000, duration: 210},{titulo: "tit3", year: 2015, rating: 3.5, genre: "Accion", descripcion: "desc.3", actors: ["actor 3","actor 4"], country: "USA", income: 35000, duration: 200}])
 * insertOne()
-  * db.movie.insertOne({titulo: "tit1", year: "1998", rating: 2.0, genre: "Drama", descripcion: "desc.1", actors: ["actor 1","actor 2"], country: "USA", income: 12000, duration: 190})
+  * db.movie.insertOne({titulo: "tit1", year: 1998, rating: 2.0, genre: "Drama", descripcion: "desc.1", actors: ["actor 1","actor 2"], country: "USA", income: 12000, duration: 190})
 * insertMany()
-  * db.movie.insert([{titulo: "tit2", year: "2005", rating: 2.5, genre: "Accion", descripcion: "desc.2", actors: ["actor 3","actor 4"], country: "USA", income: 25000, duration: 210},{titulo: "tit3", year: "2015", rating: 3.5, genre: "Accion", descripcion: "desc.3", actors: ["actor 3","actor 4"], country: "USA", income: 35000, duration: 200}])
+  * db.movie.insert([{titulo: "tit2", year: 2005, rating: 2.5, genre: "Accion", descripcion: "desc.2", actors: ["actor 3","actor 4"], country: "USA", income: 25000, duration: 210},{titulo: "tit3", year: 2015, rating: 3.5, genre: "Accion", descripcion: "desc.3", actors: ["actor 3","actor 4"], country: "USA", income: 35000, duration: 200}])
 
 #### 4 - Actualizar películas agregando el field highlighted=true a aquellas con rating > 4.5.
 * db.movie.updateMany({rating: {$gt: 4.5}},{$set: {highlighted: true}},{ upsert: true })
@@ -25,10 +25,10 @@
 * db.movie.updateMany({genre: "Drama"},{$set: {genre: "Bored"})
 
 #### 6 - Borrar todas las películas que tengan más de 30 años.
-* db.movie.deleteMany({year: {$lt: "1990"}})
+* db.movie.deleteMany({year: {$lt: 1990}})
 
 #### 7 - Buscar todas las películas argentinas.
 * db.movie.find({country: "Argentina"})
 
 #### 8 - Buscar todas las películas de acción con un buen rating (ej. > 4.0) que hayan salido los últimos 2 años.
-db.movie.find({genre: "Accion",rating: {$gt: 4.0}, year: {$gte: "2018"}})
+db.movie.find({genre: "Accion",rating: {$gt: 4.0}, year: {$gte: 2018}})
